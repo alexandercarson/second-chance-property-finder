@@ -175,11 +175,11 @@ class PropertyScraperService {
 
       const prompt = `
         Analyze this rental property website page and extract any rental listings that mention second chance leasing, lease guarantees, or flexible credit requirements.
-        
+
         Look for properties that mention any of these keywords: ${GUARANTEE_KEYWORDS.join(
           ', ',
         )}
-        
+
         For each property found, extract:
         - Title/name of the property
         - Address (street, city, state)
@@ -190,10 +190,10 @@ class PropertyScraperService {
         - Contact information (phone, email, or website)
         - Any images URLs
         - Which guarantee keywords were mentioned
-        
+
         Return ONLY a valid JSON array of properties. If no relevant properties are found, return an empty array [].
         Do not include any explanatory text, just the JSON array.
-        
+
         Example format:
         [
           {
